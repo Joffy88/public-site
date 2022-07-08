@@ -1,0 +1,265 @@
+/* Clonedle */
+
+#clonedle {
+  width: 90%;
+  min-height: 90vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#clonedle-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#row0,
+#row1,
+#row2,
+#row3,
+#row4,
+#row5 {
+  display: grid;
+  grid-template-columns: repeat(7, 14.28%);
+}
+
+.clonedle-tile {
+  width: 70px;
+  height: 70px;
+  border-style: solid;
+  border-width: 1px;
+  margin: 2px;
+  text-align: center;
+  line-height: 70px;
+  font-weight: 600;
+}
+
+#keyboard {
+  margin-top: 50px;
+  width: 518px;
+}
+
+#keyboard-row-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#keyboard-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#keyboard-row-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.keyboard-key {
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+  border-width: 1px;
+  border-style: none;
+  border-radius: 3px;
+  background-color: rgb(211, 214, 218);
+  font-weight: 450;
+  line-height: 45px;
+}
+
+.keyboard-key:active {
+  transform: scale(0.9);
+}
+
+#Enter,
+#Delete {
+  font-size: 0.8rem;
+}
+
+.column-0 {
+  transition: 0.5s;
+  transition-delay: 250ms;
+}
+.column-1 {
+  transition: 0.5s;
+  transition-delay: 0.75s;
+}
+
+.column-2 {
+  transition: 0.5s;
+  transition-delay: 1.25s;
+}
+
+.column-3 {
+  transition: 0.5s;
+  transition-delay: 1.75s;
+}
+
+.column-4 {
+  transition: 0.5s;
+  transition-delay: 2.25s;
+}
+
+.column-5 {
+  transition: 0.5s;
+  transition-delay: 2.75s;
+}
+
+.column-6 {
+  transition: 0.5s;
+  transition-delay: 3.25s;
+}
+
+.green {
+  background-color: #538d4e;
+  transform: rotateX(360deg);
+}
+
+.gold {
+  background-color: #c9b458;
+  transform: rotateX(360deg);
+}
+
+.grey {
+  background-color: rgb(120, 124, 126);
+  transform: rotateX(360deg);
+}
+
+.green-bg {
+  background-color: #538d4e;
+  color: #fff;
+}
+
+.green,
+.gold,
+.grey {
+  color: #fff;
+}
+
+#clonedle-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#close-modal {
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: 0.25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform, opacity;
+  z-index: 0;
+}
+
+#close-modal:hover {
+  background: #f6f9fe;
+  color: #174ea6;
+}
+
+#close-modal:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%),
+    0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+#close-modal:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+
+#close-modal:not(:disabled) {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
+    rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
+}
+
+#close-modal:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 2px 3px 0,
+    rgba(60, 64, 67, 0.15) 0 6px 10px 4px;
+}
+
+#close-modal:not(:disabled):focus {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
+    rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
+}
+
+#close-modal:not(:disabled):active {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 4px 4px 0,
+    rgba(60, 64, 67, 0.15) 0 8px 12px 6px;
+}
+
+#close-modal:disabled {
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 3px 0,
+    rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
+}
+
+@media (max-width: 582px) {
+  #clonedle {
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-evenly;
+    height: calc(100vh - calc(100vh - 100%));
+    width: 100%;
+  }
+
+  #row0,
+  #row1,
+  #row2,
+  #row3,
+  #row4,
+  #row5 {
+    width: 100%;
+  }
+
+  #clonedle-grid {
+    margin: 0 auto;
+  }
+
+  .clonedle-tile {
+    width: 12vw;
+    margin: 2px;
+    text-align: center;
+    line-height: 80px;
+    font-weight: 600;
+    aspect-ratio: 1 / 1;
+  }
+
+  #keyboard {
+    margin: 2px 2px 5px 2px;
+    width: 98%;
+  }
+
+  .keyboard-key {
+    margin: 2px;
+    height: 50px;
+    line-height: 100%;
+    font-size: 0.8rem;
+  }
+}

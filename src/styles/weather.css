@@ -1,0 +1,192 @@
+/* Weather App */
+
+#weather-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 64px;
+  min-height: 100vh;
+}
+
+#fake-phone {
+  position: relative;
+  color: #fff;
+  width: 360px;
+  height: 640px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+  background-image: url("https://images.unsplash.com/photo-1516912481808-3406841bd33c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=888&q=80");
+  -webkit-box-shadow: 2px 2px 1px 2px rgba(10, 25, 47, 0.55);
+  box-shadow: 2px 2px 1px 2px rgba(10, 25, 47, 0.55);
+}
+
+/* The horizontal line on the top of the device */
+#fake-phone:before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+#fake-phone:after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+/* Advanced Weather App */
+
+.location {
+  display: flex;
+  flex-direction: column;
+}
+
+.find-location-btn {
+  margin-bottom: 40px;
+}
+
+.weather-search-button {
+  cursor: "pointer";
+}
+
+.weather-search-input {
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.ind-day {
+  margin: 5px;
+  border-style: solid;
+  border-width: 1px;
+  color: #fff;
+  background-image: url("");
+  background-color: #132f59;
+  background-size: cover;
+}
+#day0,
+#day1,
+#day2,
+#day3,
+#day4 {
+  padding: 0px !important;
+}
+
+.daily-temp {
+  font-weight: 600;
+}
+
+.weather-image {
+  max-width: 64px !important;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+.daily-outlook {
+  max-width: 50% !important;
+  padding: 0 !important;
+  margin-bottom: 0;
+}
+
+.weather-outlook {
+  justify-content: center;
+}
+
+.weather-date {
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(10, 25, 47, 0.85);
+}
+
+.weather-hr {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.weather-overview {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  background-color: #fff;
+  color: #000;
+  border-style: solid;
+  border-width: 1px;
+  padding-top: 1rem;
+}
+
+.daily-feels {
+  padding: 1rem;
+  background-color: #132f59;
+  margin-bottom: 0;
+}
+
+.daily-gust-speed {
+  background-color: rgba(10, 25, 47, 0.85);
+  color: #fff;
+  margin-bottom: 0;
+  padding: 1rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000;
+}
+
+.daily-wind-speed {
+  background-color: #fff;
+  color: #000;
+  margin: 0;
+  padding: 1rem;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.find-location-btn {
+  min-width: 200px;
+  margin-top: 20px;
+  min-height: 3rem;
+  background-color: rgba(10, 25, 47, 0.85);
+  color: rgb(204, 214, 246);
+}
+
+@media (max-width: 767px) and (min-width: 575px) {
+  .daily-outlook {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .daily-weather {
+    max-width: 80%;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+  }
+
+  .ind-day {
+    margin-bottom: 20px;
+  }
+}

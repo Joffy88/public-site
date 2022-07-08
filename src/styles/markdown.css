@@ -1,0 +1,76 @@
+/* MARKDOWN PREVIWER */
+
+#markdown {
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  background-color: #74a57f;
+}
+
+#markdown #editor {
+  margin-bottom: 2vh;
+  display: flex;
+  justify-content: center;
+}
+
+#markdown #editor,
+#markdown #preview {
+  width: 80vw;
+  height: 50vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em;
+  border-color: #515b53;
+}
+
+#markdown #preview {
+  border-style: solid;
+
+  overflow-y: scroll;
+  background-color: white;
+}
+
+#markdown .clear-code,
+#markdown .reset {
+  font-family: "Lexend Mega", sans-serif;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20vw;
+  border: 0.16em solid #ffffff;
+  padding: 0.5em 3em;
+  color: #ffffff;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 1vh;
+}
+
+#markdown .clear-code:hover,
+#markdown .reset:hover {
+  color: #dddddd;
+  border-color: #dddddd;
+}
+
+#markdown .clear-code:active,
+#markdown .reset:active {
+  color: #bbbbbb;
+  border-color: #bbbbbb;
+}
+
+#markdown .title {
+  text-align: center;
+  color: #413937;
+  padding-top: 50px;
+}
+
+#markdown h2 {
+  text-align: center;
+  color: #413937;
+}
+
+#markdown h1 {
+  text-align: center;
+}

@@ -1,0 +1,75 @@
+/* Clock */
+
+#clock {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+#clock-page {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #2c3347;
+}
+
+.button-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+#break-decrement,
+#break-increment,
+#session-decrement,
+#session-increment,
+#reset,
+#start_stop {
+  padding: 15px;
+  margin: 5px;
+}
+
+#reset,
+#start_stop {
+  font-family: "Montserrat", sans-serif;
+  width: 150px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  font-size: 1.25rem;
+}
+
+#start_stop {
+  background-color: #65e26b;
+}
+
+#reset {
+  background: rgb(66, 184, 221);
+  color: #fff;
+}
+
+#fcc_test_suite_wrapper {
+  z-index: 999;
+}
+
+#time-left {
+  font-family: "Calculator";
+  font-size: 4rem;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  line-height: 200px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.redButton {
+  background-color: red;
+}
+
+.greenButton {
+  background-color: green;
+}

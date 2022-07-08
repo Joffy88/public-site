@@ -1,0 +1,147 @@
+/* DRUM MACHINE */
+
+#drums #drum-machine {
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2vh;
+}
+body #drums {
+  background: url("https://jon-sutton.co.uk/images/drum-machine-background.jpg")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+#drums #drum-container {
+  border-style: solid;
+  border-color: black;
+  margin-top: 5vh;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(142, 154, 175, 0.84);
+  color: #2b2d42;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#drums .drum-pad {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #edf2f4;
+  width: 90%;
+  height: 5vh;
+  padding: 20px;
+  margin: 20px;
+}
+
+#drums .drum-pad,
+#drums #display {
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.66);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.66);
+}
+
+#drums .drum-pad:focus {
+  background-color: #2b2d42;
+  color: #edf2f4;
+}
+
+#drums h1,
+#drums h2,
+#drums #display {
+  text-align: center;
+}
+
+#drums #power-switch {
+  display: block;
+  margin: auto;
+}
+
+#drums #display {
+  display: block;
+  margin: auto;
+  font-size: 40px;
+
+  width: 80%;
+  margin-bottom: 5vh;
+  background-color: #ef233c;
+}
+
+@media (min-width: 1080px) {
+  #drums #display {
+    width: 30%;
+  }
+
+  #drums #drum-container {
+    max-width: 60%;
+    color: white;
+  }
+}
+#drums .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+#drums .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+#drums .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2196f3;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#drums .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#drums input:checked + .slider {
+  background-color: #d90429;
+}
+
+#drums input:focus + .slider {
+  box-shadow: 0 0 1px #d90429;
+}
+
+#drums input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+
+#drums .slider.round {
+  border-radius: 34px;
+}
+
+#drums .slider.round:before {
+  border-radius: 50%;
+}
