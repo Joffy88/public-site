@@ -86,6 +86,8 @@ function Hardle() {
     for (let i = 0; i < SevenLetterDefinitions.length; i++) {
       words.push(SevenLetterDefinitions[i][0]);
     }
+
+    console.log(curWord);
     setHardle({
       ...hardle,
       words: SevenLetterDefinitions,
