@@ -87,7 +87,7 @@ function Hardle() {
       words.push(SevenLetterDefinitions[i][0]);
     }
 
-    console.log(curWord);
+    console.log(SevenLetterDefinitions[dailyWord][0]);
     setHardle({
       ...hardle,
       words: SevenLetterDefinitions,
